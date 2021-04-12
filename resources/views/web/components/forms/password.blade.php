@@ -1,0 +1,1 @@
+<input type="password" name="{{ $name }}" id="{{ isset($id) ? $id : $name }}" placeholder="{{ $placeholder }}{{ $required ? '*' : '' }}" {{ $required ? 'required' : '' }}  minlength="{{ isset($minlength) ? $minlength : 8 }}">

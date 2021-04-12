@@ -1,0 +1,21 @@
+ul.breadcrumb {
+    padding: 20px 0;
+    list-style: none;
+    li {
+        display: inline;
+        color: #7a8498;
+        font-size: 12px;
+        font-weight: 500;
+        &:first-child {
+            &:before { 
+                display: none;
+            }
+        }
+        &:before {
+            padding: 8px;
+            color: #7a8498;
+            content: "›";
+            font-size: 16px;
+        }
+    }
+}

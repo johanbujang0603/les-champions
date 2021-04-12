@@ -1,0 +1,30 @@
+.v-align-solo{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.clamped{
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical; 
+	overflow: hidden;
+}
+.outline-none{
+	outline: none;
+	&:focus, &:active{
+		outline: none;
+	}
+}
+.no-lh{
+	line-height: normal !important;
+}
+.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: white;
+	width: 100%;
+	z-index: 2;
+}

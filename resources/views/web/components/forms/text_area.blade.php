@@ -1,0 +1,1 @@
+<textarea id="{{ isset($id) ? $id : '' }}" name="{{ $name }}" placeholder="{{ $placeholder }}" {{ $required ? 'required' : '' }}>{{ isset($value) ? $value : old($name) }}</textarea>

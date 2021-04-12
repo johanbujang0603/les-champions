@@ -1,0 +1,23 @@
+$enable-grid-classes: true;
+$grid-columns:                12;
+$grid-gutter-width:           30px;
+$grid-row-columns:            6;
+
+$container-max-widths: (
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1160px
+	) !default;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1160px
+	) !default;
+
+// Colors
+$body-bg: #ffffff;
+$separator-grey: #d8d8d8;

@@ -1,0 +1,25 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - app
+
+    level: 8
+
+    excludePaths:
+        - ./app/Serializers/CustomArraySerializer.php
+
+    ignoreErrors:
+        -
+            path: app\Responsables\Response.php
+            message: '#Call to an undefined method App\\Responsables\\Response::toJsonCollectionResponse\(\).#'
+        -
+            path: app\Responsables\Response.php
+            message: '#Call to an undefined method App\\Responsables\\Response::toJsonResponse\(\).#'
+
+    checkMissingIterableValueType: false
+
+    parallel:
+        processTimeout: 180.0

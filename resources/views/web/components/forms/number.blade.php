@@ -1,0 +1,1 @@
+<input type="number" name="{{ $name }}" id="{{ isset($id) ? $id : $name }}" min="{{ $min }}" max="{{ $max }}" value='{{ isset($value) ? $value : old($name) }}' {{ $required ? 'required' : '' }}>

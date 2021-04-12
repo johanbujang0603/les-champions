@@ -1,0 +1,1 @@
+<input type="email" name="{{ $name }}" id="{{ isset($id) ? $id : $name }}" placeholder="{{ $placeholder }}{{ $required ? '*' : '' }}" value='{{ isset($value) ? $value : old($name) }}' {{ $required ? 'required' : '' }}>

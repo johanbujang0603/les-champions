@@ -1,0 +1,141 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    overflow-x: hidden;
+    background: $body-bg;
+    color: #263554;
+}
+h1, h2, h3, p{
+    margin: 0;
+}
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+hr{
+    border-color: $separator-grey;
+}
+html{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a, a:active, a:hover, a:focus{
+    text-decoration: none;
+}
+label{
+    margin-bottom: 0;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes navbar-animate {
+    0% {top: -80px;}
+    100% {top: 0;}
+}
+
+@keyframes navbar-animate-back {
+    0% {top: 0;}
+    100% {top: -80px;}
+}
+
+
+.errors-container, .success-container{
+    display: none;
+    margin-bottom: 10px;
+}
+.invalid-feedback, .success-feedback{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;;
+    display: inline-block;
+    width: 100%;
+}
+.success-feedback{
+    color: green;
+}
+
+.loading{
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #ffffffa6;
+        position: absolute;
+        border-radius: 8px;
+        z-index: 1;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        margin-top: -25px;
+        margin-left: -25px;
+        border: 8px solid #000000;
+        border-radius: 50%;
+        border-top: 8px solid black;
+        border-bottom: 8px solid #000000;
+        width: 50px;
+        height: 50px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    &-no-opacity{
+        &:before{
+            background-color: #ffffff;
+        }
+    }
+}
+
+*{
+    &::-webkit-scrollbar-thumb {
+        background: #000000;
+        border-radius: 4px;
+    }
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    &::-ms-scrollbar-thumb {
+        background: #000000;
+        border-radius: 4px;
+    }
+    &::-ms-scrollbar {
+        width: 4px;
+    }
+    &::-moz-scrollbar-thumb {
+        background: #000000;
+        border-radius: 4px;
+    }
+    &::-moz-scrollbar {
+        width: 4px;
+    }
+}

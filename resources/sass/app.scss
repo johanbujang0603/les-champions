@@ -1,0 +1,23 @@
+@import 'variables';
+
+//Tailwind import
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+//bootstrap import
+@import '~bootstrap/scss/mixins/_breakpoints';
+@import '~bootstrap/scss/mixins/_grid';
+@import '~bootstrap/scss/mixins/_grid-framework';
+@import '~bootstrap/scss/_grid';
+
+@import 'general';
+@import 'fonts';
+@import 'breadcrumb';
+@import 'tools';
+@import 'modals';
+@import 'dropdowns';
+@import 'timecounter';
+@import 'header';
+@import 'footer';
+@import 'home';
